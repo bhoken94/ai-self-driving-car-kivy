@@ -41,7 +41,7 @@ class MyAtariRescale42x42(gym.ObservationWrapper):
         self.observation_space = Box(0.0, 1.0, [1, 42, 42])
 
     def _observation(self, observation):
-    	return _process_frame42(observation)
+        return _process_frame42(observation)
 
 
 class MyNormalizedEnv(gym.ObservationWrapper):
